@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12S-ba-bf2">
-                                <rect key="frame" x="147.5" y="96" width="25" height="30"/>
+                                <rect key="frame" x="8" y="96" width="304" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -74,6 +74,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eja-FC-C8w">
                                 <rect key="frame" x="120.5" y="409" width="79" height="30"/>
                                 <state key="normal" title="SaveAuthor"/>
+                                <connections>
+                                    <action selector="saveAuthor" destination="5DS-yN-xsj" eventType="touchUpInside" id="JyB-MA-nhL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,14 +93,16 @@
                             <constraint firstItem="5pa-CY-pzH" firstAttribute="centerX" secondItem="QGG-dj-ilo" secondAttribute="centerX" id="sDz-l3-fxT"/>
                             <constraint firstItem="eja-FC-C8w" firstAttribute="bottom" secondItem="UdE-G6-ovd" secondAttribute="bottom" constant="8" id="v3X-Di-hKC"/>
                             <constraint firstItem="5pa-CY-pzH" firstAttribute="width" secondItem="UdE-G6-ovd" secondAttribute="width" constant="-16" id="vVD-NZ-tfj"/>
+                            <constraint firstItem="12S-ba-bf2" firstAttribute="width" secondItem="5pa-CY-pzH" secondAttribute="width" id="ygb-4V-gnm"/>
                             <constraint firstItem="Oab-Bs-IdE" firstAttribute="leading" secondItem="UdE-G6-ovd" secondAttribute="leading" constant="16" id="yob-S8-uJm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UdE-G6-ovd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" id="JRU-xN-xDe"/>
                     <connections>
+                        <outlet property="authorNameTextField" destination="12S-ba-bf2" id="gJC-0b-igB"/>
                         <outlet property="authorPortretImageView" destination="Oab-Bs-IdE" id="LzE-mz-Gyr"/>
-                        <outlet property="textField" destination="5pa-CY-pzH" id="RMF-7s-MFk"/>
+                        <outlet property="quoteTextField" destination="5pa-CY-pzH" id="6Dt-WF-0B0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zl0-lU-BG3" userLabel="First Responder" sceneMemberID="firstResponder"/>

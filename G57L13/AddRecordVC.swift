@@ -11,16 +11,30 @@ import CoreData
 
 class AddRecordVC: UIViewController {
 
-	@IBOutlet weak var textField: UITextField!
+	@IBOutlet weak var quoteTextField: UITextField!
+	@IBOutlet weak var authorNameTextField: UITextField!
 	@IBOutlet weak var authorPortretImageView: UIImageView!
+	
+	var author: Author?
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+	}
+	
+	@IBAction func saveAuthor() {
+		author = Author(context: appDel.context)
+		author?.image = UIImageJPEGRepresentation(authorPortretImageView.image!, 0.5)
+		author?.name = authorNameTextField.text!
+	}
 	
 	@IBAction func saveRecord() {
 		
 		let context = appDel.context
 		let newQuote = Quote(context: context)
-		newQuote.text = textField.text
+		newQuote.text = quoteTextField.text
 		newQuote.dateAdded = Date()
-		
+		newQuote.author = author
 		// Save the context.
 		do {
 			try context.save()
