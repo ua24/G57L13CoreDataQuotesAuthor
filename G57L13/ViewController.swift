@@ -31,6 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		emailTextField.delegate = self
+		writeFile()
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -60,6 +61,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		
 	}
 
+	func writeFile() {
+		let words = ["lol", "opa"] as NSArray
+		let url = URL(fileURLWithPath: "/Usera/ivanvasilevich/Desktop/win.plist")
+		
+		do {
+			try words.write(to: url)
+		}
+		catch {
+			print(error)
+		}
+		
+	}
 
 }
 

@@ -13,6 +13,8 @@
 		4CB728421FB22ADA00D9A976 /* G57L13.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CB728401FB22ADA00D9A976 /* G57L13.xcdatamodeld */; };
 		4CB728441FB22ADA00D9A976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB728431FB22ADA00D9A976 /* Assets.xcassets */; };
 		4CB728471FB22ADA00D9A976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB728451FB22ADA00D9A976 /* LaunchScreen.storyboard */; };
+		4CB728501FB2429900D9A976 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7284E1FB2429900D9A976 /* MasterViewController.swift */; };
+		4CB728511FB2429900D9A976 /* AddRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7284F1FB2429900D9A976 /* AddRecordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4CB728431FB22ADA00D9A976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB728461FB22ADA00D9A976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB728481FB22ADA00D9A976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CB7284E1FB2429900D9A976 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		4CB7284F1FB2429900D9A976 /* AddRecordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		4CB728381FB22ADA00D9A976 /* G57L13 */ = {
 			isa = PBXGroup;
 			children = (
+				4CB7283D1FB22ADA00D9A976 /* Main.storyboard */,
+				4CB7284F1FB2429900D9A976 /* AddRecordVC.swift */,
+				4CB7284E1FB2429900D9A976 /* MasterViewController.swift */,
 				4CB728391FB22ADA00D9A976 /* AppDelegate.swift */,
 				4CB7283B1FB22ADA00D9A976 /* ViewController.swift */,
-				4CB7283D1FB22ADA00D9A976 /* Main.storyboard */,
 				4CB728431FB22ADA00D9A976 /* Assets.xcassets */,
 				4CB728451FB22ADA00D9A976 /* LaunchScreen.storyboard */,
 				4CB728481FB22ADA00D9A976 /* Info.plist */,
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB728501FB2429900D9A976 /* MasterViewController.swift in Sources */,
 				4CB728421FB22ADA00D9A976 /* G57L13.xcdatamodeld in Sources */,
+				4CB728511FB2429900D9A976 /* AddRecordVC.swift in Sources */,
 				4CB7283C1FB22ADA00D9A976 /* ViewController.swift in Sources */,
 				4CB7283A1FB22ADA00D9A976 /* AppDelegate.swift in Sources */,
 			);
